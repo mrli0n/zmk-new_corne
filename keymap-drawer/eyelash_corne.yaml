@@ -1,55 +1,102 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY: [TAB, Q, W, E, R, T, UP, Y, U, I, O, P, \, CAPS, A, S, D, F, G, LEFT, ENTER, RIGHT, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, SPACE, DOWN, N, M, ',', .,
-    /, ESC, Fn, DEL, SPACE, ENTER, '&LMETA', Symbol]
+  QWERTY:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-caps$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:keyboard-space$$
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - Fn
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '&LMETA'
+  - Symbol
   Symbol:
-  - ''
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - PG UP
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - '|'
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '@'
   - '#'
   - $
   - '%'
   - HOME
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - END
   - ^
   - '&'
   - '*'
   - (
   - )
-  - '-'
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG DN
   - +
-  - '-'
-  - \
-  - '['
-  - ']'
+  - {t: '-', s: _}
+  - {t: \, s: '|'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - _
-  - {t: ▽, type: trans}
-  - BSPC
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
   Fn:
   - F11
@@ -58,45 +105,45 @@ layers:
   - F3
   - F4
   - F5
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F6
   - F7
   - F8
   - F9
   - F10
   - F12
-  - ''
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - ''
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB HUD
   - '&rbg_ug RGB_HUI'
   - RGB SAD
   - RGB SAI
   - RGB EFF
-  - ''
-  - LCTRL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
   - LMETA
-  - LALT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB BRD
   - '&rbg_ug RGB_BRI'
   - RGB SPD
   - RGB SPI
   - RGB TOG
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {type: held}
-  - DEL
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
