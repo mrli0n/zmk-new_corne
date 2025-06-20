@@ -47,7 +47,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&LMETA'
+  - LMETA
   - Symbol
   Symbol:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
