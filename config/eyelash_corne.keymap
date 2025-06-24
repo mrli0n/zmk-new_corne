@@ -45,61 +45,61 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Q/1 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp 1>;
+            bindings = <&kp Q>, <&kp N1>;
         };
         TDW2: TDW2 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "W/2 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp W>, <&kp 2>;
+            bindings = <&kp W>, <&kp N2>;
         };
         TDE3: TDE3 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "E/3 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp 3>;
+            bindings = <&kp E>, <&kp N3>;
         };
         TDR4: TDR4 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "R/4 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp R>, <&kp 4>;
+            bindings = <&kp R>, <&kp N4>;
         };
         TDT5: TDT5 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "T/5 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp T>, <&kp 5>;
+            bindings = <&kp T>, <&kp N5>;
         };
         TDY6: TDY6 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Y/6 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp Y>, <&kp 6>;
+            bindings = <&kp Y>, <&kp N6>;
         };
         TDU7: TDU7 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "U/7 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp U>, <&kp 7>;
+            bindings = <&kp U>, <&kp N7>;
         };
         TDI8: TDI8 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "I/8 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp I>, <&kp 8>;
+            bindings = <&kp I>, <&kp N8>;
         };
         TDO9: TDO9 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "O/9 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&kp 9>;
+            bindings = <&kp O>, <&kp N9>;
         };
         TDP0: TDP0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "P/0 Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp P>, <&kp 0>;
+            bindings = <&kp P>, <&kp N0>;
         };
     };
 
