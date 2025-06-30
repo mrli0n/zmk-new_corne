@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - '&TDQ1'
-  - '&TDW2'
-  - '&TDE3'
-  - '&TDR4'
-  - '&TDT5'
+  - Q
+  - W
+  - E
+  - R
+  - T
   - $$mdi:arrow-up-bold$$
-  - '&TDY6'
-  - '&TDU7'
-  - '&TDI8'
-  - '&TDO9'
-  - '&TDP0'
+  - Y
+  - U
+  - I
+  - O
+  - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
   - A
@@ -65,7 +65,7 @@ layers:
   - '|'
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&PrtScn'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
