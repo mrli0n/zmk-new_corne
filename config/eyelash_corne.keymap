@@ -41,68 +41,6 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp ESC>;
         };
-#if 0
-        TDQ1: TDQ1 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Q/1 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp N1>;
-        };
-        TDW2: TDW2 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "W/2 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp W>, <&kp N2>;
-        };
-        TDE3: TDE3 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "E/3 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&kp N3>;
-        };
-        TDR4: TDR4 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "R/4 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp R>, <&kp N4>;
-        };
-        TDT5: TDT5 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "T/5 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp N5>;
-        };
-        TDY6: TDY6 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Y/6 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp Y>, <&kp N6>;
-        };
-        TDU7: TDU7 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "U/7 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp U>, <&kp N7>;
-        };
-        TDI8: TDI8 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "I/8 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp N8>;
-        };
-        TDO9: TDO9 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "O/9 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp O>, <&kp N9>;
-        };
-        TDP0: TDP0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "P/0 Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp P>, <&kp N0>;
-        };
-#endif
     };
 
     macros {
@@ -150,8 +88,8 @@
             display-name = "Symbol";
             bindings = <
 &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                     &kp PG_UP               &kp N6       &kp N7        &kp N8        &kp N9        &kp N0        &kp PIPE
-&kp LCTRL     &none         &PrtScn 0     &none         &none         &none            &kp HOME  &none     &kp END       &kp EQUAL    &kp MINUS     &kp LBKT      &kp RBKT      &none         &none
-&kp LSHIFT    &none         &kp LALT      &none         &none         &none        &none         &kp PG_DN               &none        &none         &none         &none         &none         &kp ESC
+&kp LSHIFT    &none         &kp S         &none         &none         &none            &kp HOME  &none     &kp END       &kp EQUAL    &kp MINUS     &kp LBKT      &kp RBKT      &none         &none
+&kp LCTRL     &kp LMETA     &kp LALT      &none         &none         &none        &none         &kp PG_DN               &none        &none         &none         &none         &none         &kp ESC
                                           &trans        &kp DEL       &none                                              &none        &none         &trans
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -162,8 +100,8 @@
             bindings = <
 &kp F11       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                     &kp PG_UP               &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F12
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp HOME  &none     &kp END       &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF &none
-&kp LCTRL     &kp LMETA     &kp LALT      &none         &none         &none        &none         &kp PG_DN               &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_TOG &none
-                                          &trans        &kp DEL       &kp BSPC                                           &none         &none         &trans 
+&none         &none         &none         &none         &none         &none        &none         &kp PG_DN               &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_TOG &none
+                                          &trans        &none         &none                                              &none         &none         &trans 
             >;
             sensor-bindings = <&rgb_encoder>;
         };
