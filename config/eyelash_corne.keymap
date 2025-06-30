@@ -110,12 +110,11 @@
             compatible = "zmk,behavior-macro";
             label = "PrtScn";
             #binding-cells = <0>;
-            bindings = <
-                &hold MOD_LMETA
-                &hold MOD_LSHIFT
-                &kp S
-                &release MOD_LSHIFT
-                &release MOD_LMETA
+            bindings = <&macro_press &kp LMETA>,
+                       <&macro_press &kp LSHIFT>,
+                       <&macro_tap &kp S>,
+                       <&macro_release &kp LSHIFT>,
+                       <&macro_release &kp LMETA>;
             >;
         };
     };
